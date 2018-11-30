@@ -4,9 +4,10 @@ HTML, body {
     border: 0px;
 }
 HTML {
-    background: url(http://i.imgur.com/b9r5sEL.jpg);
+    background: url(http://i.imgur.com/b9r5sEL.jpg) no-repeat;
     background-size: cover;
- }
+    background-color: #333;
+}
 .keyboardStand {
     display: block;
     width: 100%;
@@ -37,9 +38,10 @@ HTML {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1.8em;
+    transition: all .03s ease;
 }
 .hit {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 .hit:first-child {
     background-color: rgba(230, 25, 76, 0.514);
