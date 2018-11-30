@@ -1,0 +1,79 @@
+HTML, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+HTML {
+    background: url(http://i.imgur.com/b9r5sEL.jpg);
+    background-size: cover;
+ }
+.keyboardStand {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.keyboard {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 35vh;
+    max-width: 1000px;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(112, 112, 112, 0.582);
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(112, 112, 112, 0.452);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.hit {
+    transform: scale(1.1);
+}
+.hit:first-child {
+    background-color: rgba(230, 25, 76, 0.514);
+    border-color: rgba(230, 25, 76, 0.479);
+}
+.hit:nth-child(2) {
+    background-color: rgba(245, 131, 49, 0.514);
+    border-color: rgba(245, 131, 49, 0.411);
+}
+.hit:nth-child(3) {
+    background-color: rgba(255, 224, 25, 0.39);
+    border-color: rgba(255, 224, 25, 0.479);
+}
+.hit:nth-child(4) {
+    background-color: rgba(191, 239, 69, 0.494);
+    border-color: rgba(191, 239, 69, 0.478);
+}
+.hit:nth-child(5) {
+    background-color: rgba(60, 180, 76, 0.466);
+    border-color: rgba(60, 180, 76, 0.527);
+}
+.hit:nth-child(6) {
+    background-color: rgba(66, 211, 244, 0.486);
+    border-color: rgba(66, 211, 244, 0.486);
+}
+.hit:nth-child(7) {
+    background-color: rgba(67, 99, 216, 0.452);
+    border-color: rgba(67, 99, 216, 0.473);
+}
+.hit:nth-child(8) {
+    background-color: rgba(145, 30, 180, 0.445);
+    border-color: rgba(145, 30, 180, 0.411);
+}
+.hit:nth-child(9) {
+    background-color: rgba(240, 50, 230, 0.418);
+    border-color: rgba(240, 50, 230, 0.396);
+}
