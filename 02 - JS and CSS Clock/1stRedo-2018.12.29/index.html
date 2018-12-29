@@ -11,6 +11,7 @@
         <div class="hand hour-hand"></div>
         <div class="hand minute-hand"></div>
         <div class="hand second-hand"></div>
+        <div class="clock-center"></div>
       </div>
     </div>
 
@@ -54,6 +55,17 @@
       transform: translateY(-3px); /* account for the height of the clock hands */
     }
 
+    .clock-center {
+      height: 20px;
+      width: 20px;
+
+      background: black;
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+      border-radius: 50%;
+    }
+
     .hand {
       width: 50%;
       height: 6px;
@@ -67,16 +79,19 @@
     .hour-hand {
       background-color: red;
       height: 8px;
+      top: calc(50% - 4px);
       width: 25%;
       margin-left: 25%;
     }
     .minute-hand {
+      top: calc(50% - 3px);
       background-color: darkblue;
       width: 40%;
       margin-left: 10%;
     }
     .second-hand {
       height: 4px;
+      top: calc(50% - 2px);
     }
 
 
