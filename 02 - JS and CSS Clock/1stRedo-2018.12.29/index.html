@@ -99,21 +99,21 @@
 
   <script>
     function timeInDegrees(time, intervalsInCycle){
-      return (time / intervalsInCycle) * 360 + 90;
+      return ((time / intervalsInCycle) * 360 + 90) % 360;
     }
     function analogClock(){
       const jsDate = new Date();
 
       const seconds = jsDate.getSeconds();
-      const secondsDegress = timeInDegrees(seconds, 60)
+      const secondsDegress = timeInDegrees(seconds, 60);
       document.getElementsByClassName("second-hand")[0].style.transform = `rotate(${secondsDegress}deg)`;
 
       const minutes = jsDate.getMinutes();
-      const minutesDegress = timeInDegrees(minutes, 60)
+      const minutesDegress = timeInDegrees(minutes, 60);
       document.getElementsByClassName("minute-hand")[0].style.transform = `rotate(${minutesDegress}deg)`;
 
       const hours = jsDate.getHours();
-      const hoursDegress = timeInDegrees(hours, 12)
+      const hoursDegress = timeInDegrees(hours, 12) + (((minutesDegress + 270)) % 360) / 12;
       document.getElementsByClassName("hour-hand")[0].style.transform = `rotate(${hoursDegress}deg)`;
     }
     setInterval(analogClock, 1000);
