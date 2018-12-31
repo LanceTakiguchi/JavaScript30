@@ -21,6 +21,11 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
+    :root {
+      --spacing: 10px;
+      --blur: 0px;
+      --base: #ffc600;
+    }
 
     /*
       misc styles, nothing to do with CSS variables
@@ -42,9 +47,20 @@
     input {
       width: 100px;
     }
+
+    img {
+      padding: var(--spacing)px;
+      filter: blur(var(--blur)px);
+      background-color: var(--base);
+    }
   </style>
 
   <script>
+    function bindValues(){
+      this.value = var()
+    }
+    document.querySelectorAll('.controls input').forEach(bindValues)
+    // console.log(document.querySelector('.controls input').value);
   </script>
 
 </body>
